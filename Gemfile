@@ -3,11 +3,12 @@ source 'https://rubygems.org'
 # Define the Ruby version - required for heroku
 ruby '2.0.0'
 
+# Use MongoDB as our NoSQL database
+gem 'mongoid'
+gem 'bson_ext' # recommended for better performance
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
-
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
